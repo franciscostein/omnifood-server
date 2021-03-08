@@ -1,0 +1,22 @@
+{
+  "name": "omnifood-server",
+  "version": "1.0.0",
+  "description": "Serves a static website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandro94costa/omnifood-server.git"
+  },
+  "author": "Leandro Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leandro94costa/omnifood-server/issues"
+  },
+  "homepage": "https://github.com/leandro94costa/omnifood-server#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
