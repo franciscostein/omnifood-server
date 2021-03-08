@@ -1,7 +1,14 @@
 const express = require('express');
 const app = express();
 
-// setting middleware
-app.use(express.static(__dirname + 'public'));  // serves resources from public folder
+const publicPath = `${__dirname}/public`;
 
-const server = app.listen(5000);
+// setting middleware
+app.use(express.static(publicPath));  // serves resources from public folder
+
+// route for any request
+app.get('*', (req, res) => {
+    res.sendFile(`${publicPath}/index.html`);
+});
+
+app.listen(3000);
